@@ -62,7 +62,7 @@ void loop() {
  
   //นับครั้งเซนเซอร์เมื่อครบจะแจ้งเตือน
   while(countPIR <= 5){  
-    Serial.println(pirValue);
+    pirValue = digitalRead(pirPin);
     pinMode(ledRed, LOW);
     pinMode(ledGreen, LOW);
     pinMode(ledBlue, LOW);
